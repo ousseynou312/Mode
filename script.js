@@ -69,28 +69,7 @@ form.addEventListener("submit", function (event) {
 
 
     // Informations du QR
-
-    const qrData = JSON.stringify({
-
-        invitation_id: id,
-
-        nom: nom,
-
-        prenom: prenom,
-
-        email: email,
-
-        evenement: "Défilé de Mode Moulandzaou",
-
-        date: "29 août",
-
-        heure: "14H00",
-
-        lieu: "La Villa 13A"
-
-    });
-
-
+    const qrData = id;
     // Génération du QR
 
     new QRCode(qrCode, {
