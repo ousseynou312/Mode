@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Moulandzaou — Défilé de Mode</title>
+
+    <meta name="description"
+          content="Obtenez votre invitation pour le défilé de mode Moulandzaou.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- QR CODE -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+</head>
+
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logos">
+
+            <div class="logo-text">
+                MOULANDZAOU
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="logo-text">
+                KAY ÑU AÏDÉ
+            </div>
+
+        </div>
+
+        <a href="#invitation" class="header-button">
+            INVITATION
+        </a>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-image">
+
+                <img src="WhatsApp Image 2026-09-12 at 17.18.39.jpeg"
+                     alt="Affiche du défilé de mode Moulandzaou">
+
+            </div>
+
+
+            <div class="hero-content">
+
+                <p class="red-label">
+                    THE RUNWAY CALLING !!
+                </p>
+
+                <h1>
+                    DÉFILÉ
+                    <span>DE MODE</span>
+                </h1>
+
+                <p class="hero-description">
+
+                    La nouvelle collection de
+                    <strong>Moulandzaou</strong>
+                    vous invite à vivre une expérience
+                    unique autour de la mode et de la créativité.
+
+                </p>
+
+
+                <a href="#invitation"
+                   class="main-button">
+
+                    OBTENIR MON INVITATION
+
+                    <span>→</span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= EVENT ================= -->
+
+        <section class="event">
+
+            <div class="event-title">
+
+                <p>THE RUNWAY CALLING</p>
+
+                <h2>
+                    Un rendez-vous<br>
+                    <span>à ne pas manquer.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="event-details">
+
+
+                <div class="detail">
+
+                    <span>DATE</span>
+
+                    <strong>
+                        SAMEDI
+                        <br>
+                        29 AOÛT
+                    </strong>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <span>HEURE</span>
+
+                    <strong>
+                        14H00
+                    </strong>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <span>LIEU</span>
+
+                    <strong>
+                        LA VILLA
+                        <br>
+                        13A
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= INVITATION FORM ================= -->
+
+        <section class="invitation-section"
+                 id="invitation">
+
+            <div class="form-container">
+
+                <p class="red-label">
+                    INVITATION
+                </p>
+
+                <h2>
+                    Réservez votre
+                    <span>place.</span>
+                </h2>
+
+                <p class="form-description">
+
+                    Remplissez vos informations
+                    pour recevoir votre carte
+                    d'invitation personnelle.
+
+                </p>
+
+
+                <form id="invitationForm">
+
+
+                    <div class="field">
+
+                        <label for="prenom">
+                            PRÉNOM
+                        </label>
+
+                        <input
+                            type="text"
+                            id="prenom"
+                            placeholder="Votre prénom"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="nom">
+                            NOM
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nom"
+                            placeholder="Votre nom"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="email">
+                            E-MAIL
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="votre@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="submit-button">
+
+                        CONFIRMER MA PRÉSENCE
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CARTE INVITATION ================= -->
+
+        <section
+            class="invitation-result"
+            id="invitationResult">
+
+            <div class="ticket">
+
+
+                <div class="ticket-top">
+
+                    <p>
+                        MOULANDZAOU × KAY ÑU AÏDÉ
+                    </p>
+
+                    <span>
+                        INVITATION OFFICIELLE
+                    </span>
+
+                </div>
+
+
+                <div class="ticket-content">
+
+                    <p class="ticket-label">
+                        VOUS ÊTES INVITÉ(E)
+                    </p>
+
+
+                    <h2>
+                        DÉFILÉ
+                        <br>
+                        <span>DE MODE</span>
+                    </h2>
+
+
+                    <div class="ticket-line"></div>
+
+
+                    <p class="guest-label">
+                        INVITATION AU NOM DE
+                    </p>
+
+
+                    <h3 id="guestName">
+                        NOM PRÉNOM
+                    </h3>
+
+
+                    <p id="guestEmail"
+                       class="guest-email">
+                    </p>
+
+
+                    <!-- QR -->
+
+                    <div class="qr-area">
+
+                        <p>
+                            SCANNEZ À L'ENTRÉE
+                        </p>
+
+                        <div id="qrcode"></div>
+
+                        <small id="invitationId"></small>
+
+                    </div>
+
+
+                    <!-- EVENT -->
+
+                    <div class="ticket-details">
+
+                        <div>
+
+                            <span>DATE</span>
+
+                            <strong>
+                                SAMEDI 29 AOÛT
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>HEURE</span>
+
+                            <strong>
+                                14H00
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>LIEU</span>
+
+                            <strong>
+                                LA VILLA 13A
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <p class="ticket-footer">
+                        THE RUNWAY CALLING !!
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="newInvitation"
+                class="new-button">
+
+                RETOUR
+
+            </button>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            MOULANDZAOU
+        </div>
+
+        <p>
+            THE RUNWAY CALLING !!
+        </p>
+
+        <span>
+            © 2026 — Tous droits réservés
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
