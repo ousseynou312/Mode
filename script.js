@@ -105,7 +105,7 @@ form.addEventListener("submit", function (event) {
 
         colorLight: "#ffffff",
 
-        correctLevel: QRCode.CorrectLevel.H
+        correctLevel: QRCode.CorrectLevel.L
 
     });
 
